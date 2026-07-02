@@ -27,6 +27,7 @@
     --card-shadow-hover: 0 30px 60px -20px rgba(90, 117, 244, 0.12);
     --transition-speed: 0.4s;
     --transition-curve: cubic-bezier(0.16, 1, 0.3, 1);
+    --bg-navbar: rgba(255, 255, 255, 0.8);
 }
 
 [data-theme="dark"] {
@@ -47,6 +48,7 @@
     
     --card-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7);
     --card-shadow-hover: 0 30px 60px -15px rgba(90, 117, 244, 0.2);
+    --bg-navbar: rgba(8, 9, 14, 0.85);
 }
 
 /* ==========================================================================
@@ -199,7 +201,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: rgba(var(--bg-primary), 0.8);
+    background-color: var(--bg-navbar);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);

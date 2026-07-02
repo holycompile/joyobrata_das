@@ -82,30 +82,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================================================
-    // INTERSECTION OBSERVER FOR ACTIVE NAV LINK HIGHLIGHTING
+    // ACTIVE NAV LINK HIGHLIGHTING ON SCROLL
     // ==========================================================================
     const sections = document.querySelectorAll('section');
     const navLinksList = document.querySelectorAll('.nav-item');
 
-    const activeSectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const activeId = entry.target.getAttribute('id');
+    const handleActiveNavLink = () => {
+        let current = '';
+        
+        if (window.scrollY < 100) {
+            current = 'about';
+        } else {
+            sections.forEach(section => {
+                const sectionId = section.getAttribute('id');
+                const hasNavLink = document.querySelector(`.nav-item[href="#${sectionId}"]`);
+                if (!hasNavLink) return;
                 
-                navLinksList.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${activeId}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    }, {
-        threshold: 0.3, // Highlight link when section takes up 30% of viewport
-        rootMargin: '-20% 0px -60% 0px' // Adjust scroll margins for header offset
-    });
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 160 && rect.bottom >= 160) {
+                    current = sectionId;
+                }
+            });
+        }
+        
+        if (current) {
+            navLinksList.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    };
 
-    sections.forEach(section => {
-        activeSectionObserver.observe(section);
-    });
+    window.addEventListener('scroll', handleActiveNavLink);
+    handleActiveNavLink(); // Initial call
 });
