@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyobrata Das | Aspiring AI and Software Engineer ~ hobby : Cybersecurity & Robotics</title>
+    <meta name="description" content="Portfolio of Joyobrata Das, an aspiring AI & Machine Learning Engineer from Kolkata, India. Specialized in NLP, Machine Learning, Computer Vision, FastAPI, and React.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Joyobrata Das</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12" class="line-1"></line>
+                    <line x1="3" y1="6" x2="21" y2="6" class="line-2"></line>
+                    <line x1="3" y1="18" x2="21" y2="18" class="line-3"></line>
+                </svg>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item active">About</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <!-- <a href="#certificates" class="nav-item">Certificates</a> -->
+                
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <!-- Moon Icon (shows in light mode to switch to dark) -->
+                    <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <!-- Sun Icon (shows in dark mode to switch to light) -->
+                    <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+
+                <!-- CV Link -->
+                <a href="CV_Joyobrata_Das.pdf" target="_blank" rel="noopener noreferrer" class="cv-button">
+                    <span>CV</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section (Editorial overlap style like image 4) -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <!-- Massive background text split overlay -->
+                <div class="hero-name-wrapper">
+                    <h1 class="hero-name-bg">Joyobrata Das</h1>
+                    <!-- Portrait image centered -->
+                    <div class="hero-portrait-wrapper">
+                        <img src="photos/me_blacknwhite.png" alt="Joyobrata Das Portrait" class="hero-portrait">
+                    </div>
+                    <h1 class="hero-name-fg">Joyobrata Das</h1>
+                </div>
+
+                <!-- Footer elements of hero section -->
+                <div class="hero-footer">
+                    <!-- Social Links (Bottom Left) -->
+                    <div class="hero-socials">
+                        <a href="https://github.com/holycompile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <span class="social-circle">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joyobrata-das-53467b39b/?skipRedirect=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <span class="social-circle">LinkedIn</span>
+                        </a>
+                    </div>
+
+                    <!-- Role Meta (Bottom Right) -->
+                    <div class="hero-role-meta">
+                        <span class="role-title">CREATIVE EXPLORER</span>
+                        <span class="role-subtitle"> Aspiring AI and Software Engineer ~ hobby : Cybersecurity & Robotics</span>
+                        <div class="accent-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Centered content) -->
+        <section class="about-section scroll-reveal" id="about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <!-- Text content -->
+                    <div class="about-content">
+                        <h2 class="about-heading"><span class="heading-number">01.</span> About Me</h2>
+                        <p class="about-text">
+                            I'm <strong>Joyobrata Das</strong>, an aspiring <span class="highlight-blue">AI & Data Science Engineer</span> from Kolkata, India, currently pursuing an <strong>Integrated B.Tech + M.Tech in Artificial Intelligence and Data Science</strong> at <span class="highlight-blue-light">Devi Ahilya Vishwavidyalaya (DAVV), Indore</span> (2024–2029).
+                        </p>
+                        <p class="about-text">
+                            My interests lie at the intersection of <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, <strong>Data Science</strong>, <strong>Web Development</strong>, and <strong>Computer Vision</strong>. I enjoy building practical systems that combine software engineering with real-world problem solving.
+                        </p>
+                        <p class="about-text">
+                            My technical experience spans <strong>Python</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>React</strong>, <strong>Flask</strong>, <strong>PHP</strong>, <strong>SQLite</strong>, <strong>Git</strong>, and Machine Learning libraries such as <strong>Scikit-learn</strong>, <strong>Pandas</strong>, and <strong>NumPy</strong>. I have worked on projects ranging from web applications to AI-driven solutions.
+                        </p>
+                        <p class="about-text">
+                            Beyond technology, I am deeply passionate about <span class="highlight-italic">art, sketching, and chess</span>. Drawing has been one of my longest creative pursuits, with numerous artworks shared through my social platforms. Chess has helped me develop <strong>analytical thinking, patience, and strategic decision-making</strong>—qualities that naturally complement my approach to problem-solving.
+                        </p>
+                        <p class="about-text">
+                            I continuously seek opportunities to learn, build, and contribute in the fields of <strong>Artificial Intelligence</strong>, <strong>Data Science</strong>, and <strong>Software Engineering</strong>, with the goal of creating impactful technology that bridges innovation and real-world applications.
+                        </p>
+                        <div class="about-buttons">
+                            <a href="#education" class="btn btn-primary">View Journey</a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section (Timeline style like image 3) -->
+        <section class="education-section scroll-reveal" id="education">
+            <div class="section-container">
+                <h2 class="section-heading text-center">Academic <span class="heading-accent">Trajectory</span></h2>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node node-active"></div>
+                        <div class="timeline-date">08/2024 — 05/2029</div>
+                        <div class="timeline-content">
+                            <span class="timeline-degree">Integrated B.Tech + M.Tech in Artificial Intelligence and Data Science</span>
+                            <h3 class="timeline-institution">Devi Ahilya Vishwavidyalaya (DAVV)</h3>
+                            <span class="timeline-location">Indore, India</span>
+                            <div class="timeline-card">
+                                <ul>
+                                    <li>Maintaining an excellent academic record, specializing in core data science, artificial intelligence theory, and machine learning principles.</li>
+                                    <li>Collaborating on multiple software and AI projects, contributing directly to data pipeline architecture and model deployment.</li>
+                                    <li>Active member of technical student chapters focusing on data analytics, predictive modeling, and algorithm design.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-date">Graduated 2024</div>
+                        <div class="timeline-content">
+                            <span class="timeline-degree">ISC (Class XII) & ICSE (Class X)</span>
+                            <h3 class="timeline-institution">St. Joan's School</h3>
+                            <span class="timeline-location">Kolkata, India</span>
+                            <div class="timeline-card">
+                                <ul>
+                                    <li>Completed secondary and higher secondary education with a strong focus on Mathematics, Physics, and Computer Science.</li>
+                                    <li>Participated in school exhibitions, science events, and technical group projects.</li>
+                                    <li>Created digital platforms and scripts while balancing rigorous academic responsibilities.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Cards layout like image 5) -->
+        <section class="projects-section scroll-reveal" id="projects">
+            <div class="section-container">
+                <div class="projects-header">
+                    <h2 class="section-heading">Featured Projects</h2>
+                    <p class="section-subheading">Practical applications of AI and Web Tech</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: AgroFlow -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="photos/agroflow_1.png" alt="AgroFlow Dashboard" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/holycompile/Agroflow" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">AI & GEOSPATIAL INTELLIGENCE</span>
+                            <h3 class="project-title">AgroFlow</h3>
+                            <p class="project-description">
+                                An AI-powered agricultural monitoring dashboard integrating satellite imagery, machine learning, and geospatial analysis for crop intelligence and irrigation insights.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>Geospatial API</span>
+                                <span>React</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: SDSF DAVV Official Website -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="photos/sdsf_webpage.png" alt="SDSF DAVV Website" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://dsf.dauniv.ac.in/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Live Demo">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">WEB DEVELOPMENT & DEPLOYMENT</span>
+                            <h3 class="project-title">SDSF DAVV Official Website</h3>
+                            <p class="project-description">
+                                Contributed to the development and deployment of the official departmental website for the School of Data Science and Forecasting, DAVV, Indore.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>HTML5 / CSS3</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>SQLite</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Secure Authentication System -->
+                    <article class="project-card">
+                        <div class="project-image-container double-image">
+                            <img src="photos/cypher.png" alt="Secure Authentication System" class="project-image project-image-primary">
+                            <img src="photos/cypher2.png" alt="Secure Authentication System Dashboard" class="project-image project-image-secondary">
+                            <div class="project-overlay">
+                                <a href="https://github.com/holycompile/secure-auth" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">WEB SECURITY & DATABASE</span>
+                            <h3 class="project-title">Secure Authentication System</h3>
+                            <p class="project-description">
+                                A user authentication platform implementing secure login workflows, encrypted databases, and session integrity protection.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>PHP</span>
+                                <span>JavaScript</span>
+                                <span>SQLite</span>
+                                <span>CSS3</span>
+                                <span>Security Headers</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Lunar Rover -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="photos/ISRO.png" alt="Lunar Rover Model" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Project Exhibit">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">ROBOTICS & EMBEDDED SYSTEMS</span>
+                            <h3 class="project-title">Chandrayaan-3 Inspired Lunar Rover Model</h3>
+                            <p class="project-description">
+                                Developed and exhibited a student-built lunar rover prototype model inspired by India's space mission, showcased during EXORGIC 2024.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>C++ (Arduino)</span>
+                                <span>Robotics</span>
+                                <span>Sensors Integration</span>
+                                <span>Mechanical Design</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section scroll-reveal" id="skills">
+            <div class="section-container">
+                <h2 class="section-heading text-center">Technical <span class="heading-accent">Skills</span></h2>
+                <p class="section-subheading text-center">Tools and technologies I use to build intelligent software</p>
+                
+                <div class="skills-grid">
+                    <!-- Category 1: AI & Data Science -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <div class="skill-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h3>AI & Data Science</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Machine Learning</span><span class="skill-level">Hands-on</span></li>
+                            <li><span>Scikit-Learn</span><span class="skill-level">Hands-on</span></li>
+                            <li><span>Pandas & NumPy</span><span class="skill-level">Actively Using</span></li>
+                            <li><span>Computer Vision</span><span class="skill-level">Working Knowledge</span></li>
+                            <li><span>Data Analysis</span><span class="skill-level">Practical Experience</span></li>
+                            <li><span>Google Earth Engine</span><span class="skill-level">Hands-on</span></li>
+                            <li><span>Geospatial Analytics</span><span class="skill-level">Working Knowledge</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Programming -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <div class="skill-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Programming</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Python</span><span class="skill-level">Proficient</span></li>
+                            <li><span>Java</span><span class="skill-level">Working Knowledge</span></li>
+                            <li><span>C++</span><span class="skill-level">Working Knowledge</span></li>
+                            <li><span>JavaScript</span><span class="skill-level">Comfortable</span></li>
+                            <li><span>PHP</span><span class="skill-level">Working Knowledge</span></li>
+                            <li><span>SQL</span><span class="skill-level">Comfortable</span></li>
+                            <li><span>HTML / CSS</span><span class="skill-level">Proficient</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Development -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <div class="skill-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <h3>Development</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>React</span><span class="skill-level">Working Knowledge</span></li>
+                            <li><span>Flask</span><span class="skill-level">Actively Using</span></li>
+                            <li><span>REST APIs</span><span class="skill-level">Hands-on</span></li>
+                            <li><span>Git & GitHub</span><span class="skill-level">Actively Using</span></li>
+                            <li><span>SQLite</span><span class="skill-level">Hands-on</span></li>
+                            <li><span>Vite</span><span class="skill-level">Hands-on</span></li>
+                            <li><span>Linux</span><span class="skill-level">Comfortable</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        [Certificates Section]
+        <section class="certificates-section scroll-reveal" id="certificates">
+            <div class="section-container">
+                <h2 class="section-heading text-center">Certifications</h2>
+                <p class="section-subheading text-center">Professional milestones and validation of skills</p>
+
+                <div class="certificates-grid">
+                    [Certificate 1]
+                    <div class="certificate-card">
+                        <div class="certificate-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Neural Networks and Deep Learning</h3>
+                            <span class="certificate-issuer">DeepLearning.AI (Coursera)</span>
+                            <span class="certificate-date">Issued Jan 2025</span>
+                            <a href="#" class="certificate-link">
+                                <span>Verify Credential</span>
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    [Certificate 2]
+                    <div class="certificate-card">
+                        <div class="certificate-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Natural Language Processing Specialization</h3>
+                            <span class="certificate-issuer">DeepLearning.AI (Coursera)</span>
+                            <span class="certificate-date">Issued Mar 2025</span>
+                            <a href="#" class="certificate-link">
+                                <span>Verify Credential</span>
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    [Certificate 3]
+                    <div class="certificate-card">
+                        <div class="certificate-badge">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Python for Data Science and Machine Learning</h3>
+                            <span class="certificate-issuer">Udemy</span>
+                            <span class="certificate-date">Issued Sep 2024</span>
+                            <a href="#" class="certificate-link">
+                                <span>Verify Credential</span>
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-card">
+                    <h2 class="section-heading text-center">Get in Touch</h2>
+                    <p class="section-subheading text-center">Interested in collaboration or hiring? Let's talk!</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:joyobratadas.85912@gmail.com" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>joyobratadas.85912@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/holycompile" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            <span>github.com/holycompile</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joyobrata-das-53467b39b/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>linkedin.com/in/joyobrata-das-53467b39b</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Joyobrata Das. All rights reserved.</p>
+            <p class="footer-subtext">Designed for speed, responsiveness, and premium aesthetics.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
