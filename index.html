@@ -28,6 +28,7 @@
             <nav class="nav-links" id="nav-links">
                 <a href="#about" class="nav-item active">About</a>
                 <a href="#education" class="nav-item">Education</a>
+                <a href="#experience" class="nav-item">Experience</a>
                 <a href="#projects" class="nav-item">Projects</a>
                 <a href="#skills" class="nav-item">Skills</a>
                 <!-- <a href="#certificates" class="nav-item">Certificates</a> -->
@@ -53,7 +54,7 @@
                 </button>
 
                 <!-- CV Link -->
-                <a href="Joyobrata das CV.pdf" target="_blank" rel="noopener noreferrer" class="cv-button">
+                <a href="CV Joyobrata Das.pdf" target="_blank" rel="noopener noreferrer" class="cv-button">
                     <span>CV</span>
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -95,7 +96,7 @@
                     <!-- Role Meta (Bottom Right) -->
                     <div class="hero-role-meta">
                         <span class="role-title">CREATIVE EXPLORER</span>
-                        <span class="role-subtitle"> Aspiring AI and Software Engineer ~ hobby : Cybersecurity & Robotics</span>
+                        <span class="role-subtitle"> Aspiring AI and Software Engineer ~ hobby : Cybersecurity</span>
                         <div class="accent-line"></div>
                     </div>
                 </div>
@@ -179,130 +180,248 @@
             </div>
         </section>
 
-        <!-- Projects Section (Cards layout like image 5) -->
+        <!-- Experience Section -->
+        <section class="experience-section scroll-reveal" id="experience">
+            <div class="section-container">
+                <h2 class="section-heading text-center">Work Experience <span class="heading-accent">Trajectory</span></h2>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item: Student Web Developer -->
+                    <div class="timeline-item">
+                        <div class="timeline-node node-active"></div>
+                        <div class="timeline-date">Nov 2025 — Present · 9 mos</div>
+                        <div class="timeline-content">
+                            <span class="timeline-degree">Student Web Developer</span>
+                            <h3 class="timeline-institution">School of Data Science and Forecasting | DAVV University (NAAC Grade: A+)</h3>
+                            <span class="timeline-location">Indore, Madhya Pradesh, India · On-site</span>
+                            <div class="timeline-card">
+                                <ul>
+                                    <li>Developed and deployed the official School of Data Science & Forecasting (SDSF), DAVV website using PHP, HTML, CSS, and JavaScript.</li>
+                                    <li>Implemented reusable PHP components to improve maintainability and code organization.</li>
+                                    <li>Contributed to enhancing the institute's digital presence and user experience.</li>
+                                </ul>
+                                
+                                <!-- LinkedIn-style Media Attachment -->
+                                <div class="experience-media">
+                                    <img src="photos/sdsf_webpage.png" alt="Official SDSF Website Preview" class="exp-media-img">
+                                    <div class="exp-media-info">
+                                        <span class="exp-media-title">Official SDSF Website</span>
+                                        <span class="exp-media-sub">School of Data Science & Forecasting, DAVV</span>
+                                    </div>
+                                    <a href="https://dsf.dauniv.ac.in/" target="_blank" rel="noopener noreferrer" class="exp-media-link-btn" aria-label="Visit Website">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                                <!-- Experience Links & Skills -->
+                                <div class="experience-footer">
+                                    
+                                    <div class="experience-skills-tags">
+                                        <span>Web Application Development</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>PHP</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Sleek Split-Screen Accordion Layout) -->
         <section class="projects-section scroll-reveal" id="projects">
             <div class="section-container">
                 <div class="projects-header">
-                    <h2 class="section-heading">Featured Projects</h2>
-                    <p class="section-subheading">Practical applications of AI and Web Tech</p>
+                    <h2 class="section-heading text-center">Featured Projects</h2>
+                    <p class="section-subheading text-center">Practical applications of AI and Web Tech</p>
+                    
+                    <!-- Projects Category Filter -->
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="ai">AI & Geospatial</button>
+                        <button class="filter-btn" data-filter="web">Web Apps</button>
+                        <button class="filter-btn" data-filter="robotics">Robotics</button>
+                    </div>
                 </div>
 
-                <div class="projects-grid">
-                    <!-- Project 1: AgroFlow -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="photos/agroflow_1.png" alt="AgroFlow Dashboard" class="project-image">
-                            <div class="project-overlay">
-                                <a href="https://github.com/holycompile/Agroflow" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </a>
+                <div class="projects-showcase-container">
+                    <!-- Left list (Menu + accordion details) -->
+                    <div class="projects-showcase-list">
+                        
+                        <!-- Project 1: AgroFlow -->
+                        <div class="showcase-item active" data-category="ai" data-image="photos/agroflow_1.png">
+                            <div class="showcase-header">
+                                <span class="showcase-num">01</span>
+                                <h3 class="showcase-title">Crop Automation: AI Driven Agriculture Support</h3>
+                                <span class="showcase-chevron">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </span>
+                            </div>
+                            <div class="showcase-details">
+                                <span class="showcase-tag">AI & GEOSPATIAL INTELLIGENCE</span>
+                                <p class="showcase-desc">An AI-powered agricultural monitoring dashboard integrating satellite imagery, machine learning, and geospatial analysis for crop intelligence and irrigation insights.</p>
+                                <div class="showcase-tech">
+                                    <span>Python</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Geospatial API</span>
+                                    <span>React</span>
+                                    <span>Flask</span>
+                                </div>
+                                <div class="showcase-links">
+                                    <a href="https://github.com/holycompile/Agroflow" target="_blank" rel="noopener noreferrer" class="showcase-link-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-body">
-                            <span class="project-tag">AI & GEOSPATIAL INTELLIGENCE</span>
-                            <h3 class="project-title">AgroFlow</h3>
-                            <p class="project-description">
-                                An AI-powered agricultural monitoring dashboard integrating satellite imagery, machine learning, and geospatial analysis for crop intelligence and irrigation insights.
-                            </p>
-                            <div class="project-tech-stack">
-                                <span>Python</span>
-                                <span>Scikit-learn</span>
-                                <span>Geospatial API</span>
-                                <span>React</span>
-                                <span>Flask</span>
-                            </div>
-                        </div>
-                    </article>
 
-                    <!-- Project 2: SDSF DAVV Official Website -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="photos/sdsf_webpage.png" alt="SDSF DAVV Website" class="project-image">
-                            <div class="project-overlay">
-                                <a href="https://dsf.dauniv.ac.in/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Live Demo">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
+                        <!-- Project 2: Neural Network From Scratch -->
+                        <div class="showcase-item" data-category="ai" data-image="photos/Neural_network_image.png">
+                            <div class="showcase-header">
+                                <span class="showcase-num">02</span>
+                                <h3 class="showcase-title">Neural Network From Scratch</h3>
+                                <span class="showcase-chevron">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </span>
+                            </div>
+                            <div class="showcase-details">
+                                <span class="showcase-tag">DEEP LEARNING FROM FIRST PRINCIPLES</span>
+                                <p class="showcase-desc">A Feedforward Neural Network from scratch using Python and NumPy to understand the core fundamentals of deep learning without relying on high-level frameworks. Implementing dense layers, activation functions (ReLU & Softmax), categorical cross-entropy loss, forward propagation, gradient descent, and backpropagation while building a modular, object-oriented codebase.</p>
+                                <div class="showcase-tech">
+                                    <span>Python</span>
+                                    <span>NumPy</span>
+                                    <span>Deep Learning</span>
+                                    <span>Algorithms</span>
+                                    <span>OOP</span>
+                                </div>
+                                <div class="showcase-links">
+                                    <a href="https://github.com/holycompile/Neural_Networks_from_Scratch" target="_blank" rel="noopener noreferrer" class="showcase-link-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-body">
-                            <span class="project-tag">WEB DEVELOPMENT & DEPLOYMENT</span>
-                            <h3 class="project-title">SDSF DAVV Official Website</h3>
-                            <p class="project-description">
-                                Contributed to the development and deployment of the official departmental website for the School of Data Science and Forecasting, DAVV, Indore.
-                            </p>
-                            <div class="project-tech-stack">
-                                <span>HTML5 / CSS3</span>
-                                <span>JavaScript</span>
-                                <span>PHP</span>
-                                <span>SQLite</span>
-                                <span>Git</span>
-                            </div>
-                        </div>
-                    </article>
 
-                    <!-- Project 3: Secure Authentication System -->
-                    <article class="project-card">
-                        <div class="project-image-container double-image">
-                            <img src="photos/cypher.png" alt="Secure Authentication System" class="project-image project-image-primary">
-                            <img src="photos/cypher2.png" alt="Secure Authentication System Dashboard" class="project-image project-image-secondary">
-                            <div class="project-overlay">
-                                <a href="https://github.com/holycompile/secure-auth" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source Code">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </a>
+                        <!-- Project 3: SDSF DAVV Official Website -->
+                        <div class="showcase-item" data-category="web" data-image="photos/sdsf_webpage.png">
+                            <div class="showcase-header">
+                                <span class="showcase-num">03</span>
+                                <h3 class="showcase-title">SDSF DAVV Official Website</h3>
+                                <span class="showcase-chevron">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </span>
+                            </div>
+                            <div class="showcase-details">
+                                <span class="showcase-tag">WEB DEVELOPMENT & DEPLOYMENT</span>
+                                <p class="showcase-desc">Contributed to the development and deployment of the official departmental website for the School of Data Science and Forecasting, DAVV, Indore.</p>
+                                <div class="showcase-tech">
+                                    <span>HTML5 / CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                    <span>SQLite</span>
+                                    <span>Git</span>
+                                </div>
+                                <div class="showcase-links">
+                                    <a href="https://dsf.dauniv.ac.in/" target="_blank" rel="noopener noreferrer" class="showcase-link-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <span>Website</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-body">
-                            <span class="project-tag">WEB SECURITY & DATABASE</span>
-                            <h3 class="project-title">Secure Authentication System</h3>
-                            <p class="project-description">
-                                A user authentication platform implementing secure login workflows, encrypted databases, and session integrity protection.
-                            </p>
-                            <div class="project-tech-stack">
-                                <span>PHP</span>
-                                <span>JavaScript</span>
-                                <span>SQLite</span>
-                                <span>CSS3</span>
-                                <span>Security Headers</span>
-                            </div>
-                        </div>
-                    </article>
 
-                    <!-- Project 4: Lunar Rover -->
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="photos/ISRO.png" alt="Lunar Rover Model" class="project-image">
-                            <div class="project-overlay">
-                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Project Exhibit">
-                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
+                        <!-- Project 4: Secure Authentication System -->
+                        <div class="showcase-item" data-category="web" data-image="photos/cypher.png">
+                            <div class="showcase-header">
+                                <span class="showcase-num">04</span>
+                                <h3 class="showcase-title">Secure Authentication System</h3>
+                                <span class="showcase-chevron">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </span>
+                            </div>
+                            <div class="showcase-details">
+                                <span class="showcase-tag">WEB SECURITY & DATABASE</span>
+                                <p class="showcase-desc">A user authentication platform implementing secure login workflows, encrypted databases, and session integrity protection.</p>
+                                <div class="showcase-tech">
+                                    <span>PHP</span>
+                                    <span>JavaScript</span>
+                                    <span>SQLite</span>
+                                    <span>CSS3</span>
+                                    <span>Security Headers</span>
+                                </div>
+                                <div class="showcase-links">
+                                    <a href="https://github.com/holycompile/secure-auth" target="_blank" rel="noopener noreferrer" class="showcase-link-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-body">
-                            <span class="project-tag">ROBOTICS & EMBEDDED SYSTEMS</span>
-                            <h3 class="project-title">Chandrayaan-3 Inspired Lunar Rover Model</h3>
-                            <p class="project-description">
-                                Developed and exhibited a student-built lunar rover prototype model inspired by India's space mission, showcased during EXORGIC 2024.
-                            </p>
-                            <div class="project-tech-stack">
-                                <span>C++ (Arduino)</span>
-                                <span>Robotics</span>
-                                <span>Sensors Integration</span>
-                                <span>Mechanical Design</span>
+
+                        <!-- Project 5: Lunar Rover -->
+                        <div class="showcase-item" data-category="robotics" data-image="photos/ISRO.png">
+                            <div class="showcase-header">
+                                <span class="showcase-num">05</span>
+                                <h3 class="showcase-title">Chandrayaan-3 Inspired Lunar Rover</h3>
+                                <span class="showcase-chevron">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </span>
+                            </div>
+                            <div class="showcase-details">
+                                <span class="showcase-tag">ROBOTICS & EMBEDDED SYSTEMS</span>
+                                <p class="showcase-desc">Developed and exhibited a student-built lunar rover prototype model inspired by India's space mission, showcased during EXORGIC 2024.</p>
+                                <div class="showcase-tech">
+                                    <span>C++ (Arduino)</span>
+                                    <span>Robotics</span>
+                                    <span>Sensors Integration</span>
+                                    <span>Mechanical Design</span>
+                                </div>
+                                <div class="showcase-links">
+                                    <a href="https://www.instagram.com/stjoansschoolkolkata/p/C2SWD3tPDS_/" target="_blank" rel="noopener noreferrer" class="showcase-link-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                        <span>The Telegraph: 19th Jan, 2024 </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
+
+                    <!-- Right pane (Laptop/Browser dynamic preview) -->
+                    <div class="projects-showcase-preview">
+                        <div class="device-mockup">
+                            <div class="device-header">
+                                <div class="device-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="device-address">http://joyobratadas.dev/project-spotlight</div>
+                            </div>
+                            <div class="device-body">
+                                <div class="preview-img-container">
+                                    <img src="photos/agroflow_1.png" alt="Project Showcase Preview" class="preview-img active">
+                                    <img src="photos/Neural_network_image.png" alt="Project Showcase Preview" class="preview-img">
+                                    <img src="photos/sdsf_webpage.png" alt="Project Showcase Preview" class="preview-img">
+                                    <img src="photos/cypher.png" alt="Project Showcase Preview" class="preview-img">
+                                    <img src="photos/ISRO.png" alt="Project Showcase Preview" class="preview-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

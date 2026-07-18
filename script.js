@@ -115,6 +115,70 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // ==========================================================================
+    // INTERACTIVE PROJECTS: SPLIT-SCREEN ACCORDION SHOWCASE
+    // ==========================================================================
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const showcaseItems = document.querySelectorAll('.showcase-item');
+    const previewImages = document.querySelectorAll('.preview-img');
+
+    if (showcaseItems.length > 0 && previewImages.length > 0) {
+        // Function to switch active project preview image
+        const activateProject = (index) => {
+            showcaseItems.forEach(item => item.classList.remove('active'));
+            previewImages.forEach(img => img.classList.remove('active'));
+
+            if (showcaseItems[index]) showcaseItems[index].classList.add('active');
+            if (previewImages[index]) previewImages[index].classList.add('active');
+        };
+
+        // Click / Hover interaction for list items
+        showcaseItems.forEach((item, index) => {
+            // Hover/Click to trigger spotlight update
+            const triggerActivation = () => {
+                if (!item.classList.contains('hide')) {
+                    activateProject(index);
+                }
+            };
+            
+            item.addEventListener('mouseenter', triggerActivation);
+            item.addEventListener('click', triggerActivation);
+        });
+
+        // Filter button click handler
+        if (filterButtons.length > 0) {
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (button.classList.contains('active')) return;
+
+                    // Update active button state
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    // Filter matching project items
+                    showcaseItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+                        
+                        if (filterValue === 'all' || itemCategory === filterValue) {
+                            item.classList.remove('hide');
+                        } else {
+                            item.classList.remove('active');
+                            item.classList.add('hide');
+                        }
+                    });
+
+                    // Automatically activate the first visible project after filtering
+                    const firstVisibleIndex = Array.from(showcaseItems).findIndex(item => !item.classList.contains('hide'));
+                    if (firstVisibleIndex !== -1) {
+                        activateProject(firstVisibleIndex);
+                    }
+                });
+            });
+        }
+    }
+
     window.addEventListener('scroll', handleActiveNavLink);
     handleActiveNavLink(); // Initial call
 });
